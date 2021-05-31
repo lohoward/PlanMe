@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Index</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  
+   h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 20px;
+      color: #111;
+  }
+  .container {
+      padding: 80px 120px;
+  }
+
+  .carousel-inner {
+  /* Preserve aspet ratio */
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  opacity: 0.5;/* makes the images a faded appearance*/
+  }
+  .overpic{
+    position:absolute;top:10%;left:44.5%;opacity:1;z-index:2;
+  }
+
+  .overpic img{
+    width:25%;
+    height:20%;
+  }
+
+  .carousel-caption h3 {
+      color: #000000;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+      /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  </style>
+</head>
+<body>
+<div class="LogoPlanME">
+  <div class="overpic">
+    <div class="caption">
+      <img src="LogoPlanME.png" alt="LogoPlanME">
+    </div>
+  </div>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="Travelimage.jpeg" alt="Travel" >
+        <div class="carousel-caption">
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="ActivitiesImage.jpeg" alt="Activities" >
+        <div class="carousel-caption">
+         </div>      
+      </div>
+    
+      <div class="item">
+        <img src="EventsImage.jpg" alt="Events" >
+        <div class="carousel-caption">
+        </div>      
+      </div>
+    </div>
+<!-- Container -->
+<div id="main" class="container text-center">
+  <p>PlanME is a platform to organise events, start fund raising or travel the world. You can involve friends or family. Enjoy planning!</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
